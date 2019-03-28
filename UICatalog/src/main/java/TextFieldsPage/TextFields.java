@@ -4,9 +4,7 @@ import common.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * Edited by riadh 09/18.
- */
+
 public class TextFields extends Base{
     @FindBy(xpath = "//XCUIElementTypeTextField[@name=\"Normal\"]")
     WebElement standard;
@@ -26,5 +24,6 @@ public class TextFields extends Base{
 
     public void writeTextToFields()throws InterruptedException{
         standard.sendKeys("Standard");
+        Thread.sleep(3000);
     }
 }

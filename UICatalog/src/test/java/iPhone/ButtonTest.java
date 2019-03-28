@@ -1,5 +1,4 @@
 package iPhone;
-
 import ButtonsPage.Buttons;
 import common.Base;
 import navigate.NavigateUi;
@@ -17,7 +16,6 @@ public class ButtonTest extends Base {
         uiCatalog.getButtonPage();
         return PageFactory.initElements(ad, Buttons.class);
     }
-
     @Test(priority = 1, enabled = false)
     public void testBackgroundBtn(){
         buttons().clickOnbackgroundBtn();

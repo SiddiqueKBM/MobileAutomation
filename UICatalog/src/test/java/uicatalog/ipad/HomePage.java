@@ -8,9 +8,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by mrahman on 9/5/15.
- */
 public class HomePage extends Base {
 
     @Test

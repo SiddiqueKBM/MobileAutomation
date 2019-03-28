@@ -1,5 +1,4 @@
 package iPhone;
-
 import ControlsPage.Controls;
 import UiCatalogPage.UiCatalog;
 import common.Base;
@@ -14,7 +13,6 @@ public class ControlsTest extends Base {
         uiCatalog.getControls();
         return PageFactory.initElements(ad, Controls.class);
     }
-
     @Test(priority = 1, enabled = false)
     public void testSwitch(){
         controls().clickonSwitch();

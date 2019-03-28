@@ -25,9 +25,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * riadh on 09/18.
- */
 public class Base {
 
     public static AppiumDriver ad = null;
@@ -70,7 +67,6 @@ public class Base {
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 }
 
-
             }else if(appType.equalsIgnoreCase("iPad 2")){
                 appDirectory = new File("IOS/src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
@@ -100,7 +96,8 @@ public class Base {
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
                 appDirectory = new File("Android/src/app");
-                findApp = new File(appDirectory,"snapchat.apk");
+                findApp = new File(appDirectory,"blackknight.apk");
+                                                  //Put your own APK
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
                     cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
@@ -145,9 +142,6 @@ public class Base {
             }
 
         }
-
-
-
 
     }
 
